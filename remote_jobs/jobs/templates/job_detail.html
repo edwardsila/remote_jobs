@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ job.title }}</title>
+</head>
+<body>
+    <h1>{{ job.title }}</h1>
+    <p><strong>Company:</strong> {{ job.company }}</p>
+    <p><strong>Location:</strong> {{ job.location }}</p>
+    <p><strong>Type:</strong> {{ job.job_type }}</p>
+    <h2>Description</h2>
+    <p>{{ job.description }}</p>
+    <h2>Requirements</h2>
+    <p>{{ job.requirements }}</p>
+    <p><a href="{{ job.link_to_apply }}" target="_blank">Apply Here</a></p>
+</body>
+</html>
